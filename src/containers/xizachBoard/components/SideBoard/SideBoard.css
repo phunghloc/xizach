@@ -1,0 +1,22 @@
+.sideboard-sideboard {
+    flex: 1;
+    height: 100%;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.sideboard-sideboard button {
+    margin: auto;
+    width: 180px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.sideboard-info {
+    margin: auto;
+    font-size: 48px;
+    font-weight: 500px;
+    height: 100px;
+}

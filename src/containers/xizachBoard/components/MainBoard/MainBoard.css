@@ -1,0 +1,19 @@
+.mainboard-mainboard {
+    width: 900px;
+    height: 100%;
+    background-color: darkseagreen;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-holder {
+    width: 120px;
+    height: 180px;
+    border: 1px black solid;
+    border-radius: 5px;
+    margin: auto 24px;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(45deg, #5663c4 25%, #f3ebff 25%, #f3ebff 50%, #5663c4 50%, #5663c4 75%, #f3ebff 75%, #f3ebff 100%);
+    background-size: 40px 40px;
+}

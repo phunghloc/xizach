@@ -1,0 +1,48 @@
+.MoneyBoard {
+    width: 100%;
+    height: 70%;
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+}
+
+.MoneyBoard-info {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.MoneyBoard-info p,
+.MoneyBoard-TotalBet p  {
+    margin: auto;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.MoneyBoard-bet {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.MoneyBoard-bet button {
+    margin: auto;
+    width: 40%;
+    height: 25%;
+    border-radius: 5px;
+}
+
+.MoneyBoard-bet button:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.MoneyBoard-TotalBet {
+    width: 100%;
+    height: 30%;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+}

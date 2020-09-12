@@ -1,0 +1,26 @@
+.card-card {
+    width: 120px;
+    height: 180px;
+    border: 1px black solid;
+    border-radius: 5px;
+    margin: auto 24px;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.card-item {
+    flex: 1;
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.card-item p {
+    line-height: 100%;;
+}
+
+.card-item-red {
+    color: red;
+}

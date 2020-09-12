@@ -1,0 +1,22 @@
+.aiBoard {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.aiBoard-score {
+    position: absolute;
+    left: 2%;
+    top: -12%;
+    font-size: 48px;
+    font-weight: 500;
+    color: white;
+}
+
+.aiBoard-loading {
+    position: absolute;
+    right: calc(50%-40px);
+    top: 0;
+}
