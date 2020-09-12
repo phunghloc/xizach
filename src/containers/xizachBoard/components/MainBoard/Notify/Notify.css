@@ -1,0 +1,31 @@
+.Notify {
+    width: 300px;
+    height: 120px;
+    display: flex;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: absolute;
+    left: calc(50% - 150px);
+    top: calc(50% - 60px);
+}
+
+.Notify p {
+    margin: auto;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.Notify-draw {
+    color: yellow;
+    border: 10px solid yellow;
+}
+
+.Notify-win {
+    color: darkgreen;
+    border: 10px solid darkgreen;
+}
+
+.Notify-lose {
+    color: darkred;
+    border: 10px solid darkred;
+}

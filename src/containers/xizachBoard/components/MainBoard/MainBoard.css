@@ -4,6 +4,7 @@
     background-color: darkseagreen;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .card-holder {

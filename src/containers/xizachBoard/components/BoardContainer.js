@@ -21,6 +21,7 @@ class boardContainer extends Component {
         canBet: true, //Có thể đặt tiền hay không
         canNewGame: true, //có thể bắt đầu chơi mới hay không.
         disabling: false, // disable các nút sau khi hạ bài
+        result: 0, // kết quả mỗi ván. 0: chưa xong, draw: chạy, win: thắng, lose: thua.
     }
 
     componentDidMount() {
@@ -89,6 +90,7 @@ class boardContainer extends Component {
             moneyOnBet: 0,
             canBet: true,
             disabling: false,
+            result: 0,
         })
     }
 
@@ -167,19 +169,26 @@ class boardContainer extends Component {
             }
             else {
                 let playerMoney = this.state.playerMoney;
+                let result = 'draw';
 
                 if (totalPlayer >= 22) { // người chơi ngoắc
                     if (totalAiCard < 22) // đủ nút ăn tiền
                         playerMoney -= this.state.moneyOnBet;
-
+                        result = 'lose';
                 } else {
-                    if (totalAiCard >= 22) // cái ngoắc
+                    if (totalAiCard >= 22){ // cái ngoắc
                         playerMoney += this.state.moneyOnBet;
+                        result = 'win';
+                    }
                     else { // <= 21 thì so nút
-                        if (totalAiCard > totalPlayer)
+                        if (totalAiCard > totalPlayer){
                             playerMoney -= this.state.moneyOnBet;
-                        else if (totalAiCard < totalPlayer)
+                            result = 'lose';
+                        }
+                        else if (totalAiCard < totalPlayer){
                             playerMoney += this.state.moneyOnBet;
+                            result = 'win';
+                        }
                     }
                 }
 
@@ -188,6 +197,7 @@ class boardContainer extends Component {
                     aiTurn: false,
                     playerMoney: playerMoney,
                     canNewGame: true,
+                    result: result,
                 });
             }
         }, 2000);
@@ -218,6 +228,7 @@ class boardContainer extends Component {
                     totalAi = {this.state.totalAi}
                     totalPlayer = {this.state.totalPlayer}
                     aiTurn = {this.state.aiTurn}
+                    result = {this.state.result}
                 />
 
                 <SideBoard 
