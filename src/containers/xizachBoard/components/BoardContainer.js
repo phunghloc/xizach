@@ -96,9 +96,6 @@ class boardContainer extends Component {
 
     //Bài của cái
     aiCardsHandler = () => {
-        if (this.state.disabling) return ;
-        this.setState({disabling: true});
-
         let totalPlayer = this.state.totalPlayer;
 
         if (this.state.player.length === 2 &&
@@ -106,16 +103,19 @@ class boardContainer extends Component {
             this.state.player.some(card => card[0] >= 10)) {
                 totalPlayer = 21.5;
                 this.setState({totalPlayer: totalPlayer})
-        } else if (this.state.player.length === 5 && this.state.totalPlayer < 22) {
-            totalPlayer = 21.6;
-            this.setState({totalPlayer: this.state.totalPlayer + 100})
-        }
+            } else if (this.state.player.length === 5 && this.state.totalPlayer < 22) {
+                totalPlayer = 21.6;
+                this.setState({totalPlayer: this.state.totalPlayer + 100})
+            }
 
         if (totalPlayer < 16) {
-                    if (totalPlayer) alert('Bạn phải trên 16 nút mới được thôi!');
-                    return ;
-                }
-                
+            if (totalPlayer) alert('Bạn phải trên 16 nút mới được thôi!');
+            return ;
+        }
+        
+        if (this.state.disabling) return ;
+        this.setState({disabling: true});
+
         const cardsHandler = () => {
             const pickedCards = [...this.state.pickedCards];
             const aiCards = [...this.state.ai];
