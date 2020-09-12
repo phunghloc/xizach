@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/xizach/static/css/main.08756c82.chunk.css",
-    "main.js": "/xizach/static/js/main.30d6f748.chunk.js",
-    "main.js.map": "/xizach/static/js/main.30d6f748.chunk.js.map",
+    "main.js": "/xizach/static/js/main.ac9b752b.chunk.js",
+    "main.js.map": "/xizach/static/js/main.ac9b752b.chunk.js.map",
     "runtime-main.js": "/xizach/static/js/runtime-main.13d2d5c4.js",
     "runtime-main.js.map": "/xizach/static/js/runtime-main.13d2d5c4.js.map",
     "static/js/2.92c630b1.chunk.js": "/xizach/static/js/2.92c630b1.chunk.js",
     "static/js/2.92c630b1.chunk.js.map": "/xizach/static/js/2.92c630b1.chunk.js.map",
     "index.html": "/xizach/index.html",
-    "precache-manifest.36103baf12d835880de16987049f371c.js": "/xizach/precache-manifest.36103baf12d835880de16987049f371c.js",
+    "precache-manifest.3de91fe7cc97f0e6737226868908583c.js": "/xizach/precache-manifest.3de91fe7cc97f0e6737226868908583c.js",
     "service-worker.js": "/xizach/service-worker.js",
     "static/css/main.08756c82.chunk.css.map": "/xizach/static/css/main.08756c82.chunk.css.map",
     "static/js/2.92c630b1.chunk.js.LICENSE.txt": "/xizach/static/js/2.92c630b1.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.13d2d5c4.js",
     "static/js/2.92c630b1.chunk.js",
     "static/css/main.08756c82.chunk.css",
-    "static/js/main.30d6f748.chunk.js"
+    "static/js/main.ac9b752b.chunk.js"
   ]
 }
