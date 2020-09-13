@@ -234,7 +234,18 @@ class boardContainer extends Component {
 
                 <SideBoard 
                     playerTotal = {this.state.totalPlayer}
-                    clicked = {this.playerCardHandler} 
+                    clicked = {() => {
+                        const drawCard = () => {
+                            this.playerCardHandler();
+                        }
+                        
+                        drawCard();
+
+                        setTimeout(() => {
+                            if (this.state.player.length === 5)
+                                this.aiCardsHandler();
+                        }, 50);
+                    }} 
                     newGame = {this.newGameHandler}
                     aiCardsHandler = {this.aiCardsHandler}
                     money = {this.state.playerMoney}
