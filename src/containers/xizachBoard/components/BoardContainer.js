@@ -112,7 +112,7 @@ class boardContainer extends Component {
             if (totalPlayer) alert('Bạn phải trên 16 nút mới được thôi!');
             return ;
         }
-        
+
         if (this.state.disabling) return ;
         this.setState({disabling: true});
 
@@ -172,9 +172,10 @@ class boardContainer extends Component {
                 let result = 'draw';
 
                 if (totalPlayer >= 22) { // người chơi ngoắc
-                    if (totalAiCard < 22) // đủ nút ăn tiền
+                    if (totalAiCard < 22){ // đủ nút ăn tiền
                         playerMoney -= this.state.moneyOnBet;
                         result = 'lose';
+                    }
                 } else {
                     if (totalAiCard >= 22){ // cái ngoắc
                         playerMoney += this.state.moneyOnBet;
